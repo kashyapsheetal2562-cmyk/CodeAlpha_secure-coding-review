@@ -1,0 +1,33 @@
+Bandit v1.7.5 (Python Security Linter)  
+Generated on: 2026-07-18 15:21 IST  
+Target: src/vulnerable_code_example.py  
+
+--------------------------------------------------
+>> Issue: [B105] Hardcoded password string
+   Severity: HIGH   Confidence: HIGH
+   Location: src/vulnerable_code_example.py:12
+   Details: Possible hardcoded password detected.
+
+--------------------------------------------------
+>> Issue: [B608] SQL injection risk
+   Severity: HIGH   Confidence: HIGH
+   Location: src/vulnerable_code_example.py:39
+   Details: SQL statement constructed from user input.
+
+--------------------------------------------------
+>> Issue: [B303] Weak cryptographic usage
+   Severity: MEDIUM   Confidence: HIGH
+   Location: src/vulnerable_code_example.py:20
+   Details: Consider using a stronger password hashing algorithm (bcrypt/Argon2 recommended).
+
+--------------------------------------------------
+>> Issue: [B110] Try/Except pass detected
+   Severity: LOW   Confidence: MEDIUM
+   Location: src/vulnerable_code_example.py:70
+   Details: Exception handling silently ignores errors.
+
+--------------------------------------------------
+Summary:
+    Files scanned: 1
+    Total issues: 4
+        Severity: 2 High, 1 Medium, 1 Low
